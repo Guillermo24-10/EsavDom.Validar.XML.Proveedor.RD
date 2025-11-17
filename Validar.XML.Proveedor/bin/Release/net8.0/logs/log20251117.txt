@@ -1,0 +1,73 @@
+2025-11-17 11:47:35.414 -05:00 [DBG] Hosting starting
+2025-11-17 11:47:36.488 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:47:36.489 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:47:36.490 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:47:36.491 -05:00 [DBG] Hosting started
+2025-11-17 11:47:52.888 -05:00 [INF] Application is shutting down...
+2025-11-17 11:47:52.889 -05:00 [DBG] Hosting stopping
+2025-11-17 11:47:52.891 -05:00 [INF] detenido por cancelación
+2025-11-17 11:47:52.894 -05:00 [DBG] Hosting stopped
+2025-11-17 11:48:28.070 -05:00 [DBG] Hosting starting
+2025-11-17 11:48:29.080 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:48:29.081 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:48:29.082 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:48:29.083 -05:00 [DBG] Hosting started
+2025-11-17 11:50:27.010 -05:00 [DBG] Hosting starting
+2025-11-17 11:50:27.939 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:50:27.943 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:50:27.945 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:50:27.946 -05:00 [DBG] Hosting started
+2025-11-17 11:50:37.822 -05:00 [DBG] Hosting starting
+2025-11-17 11:50:38.774 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:50:38.780 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:50:38.782 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:50:38.782 -05:00 [DBG] Hosting started
+2025-11-17 11:55:19.342 -05:00 [DBG] Hosting starting
+2025-11-17 11:55:20.412 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:55:20.417 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:55:20.418 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:55:20.419 -05:00 [DBG] Hosting started
+2025-11-17 11:56:00.613 -05:00 [DBG] Hosting starting
+2025-11-17 11:56:01.590 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:56:01.596 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:56:01.598 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:56:01.599 -05:00 [DBG] Hosting started
+2025-11-17 11:56:58.052 -05:00 [DBG] Hosting starting
+2025-11-17 11:56:59.118 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:56:59.123 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:56:59.125 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:56:59.126 -05:00 [DBG] Hosting started
+2025-11-17 11:58:07.019 -05:00 [DBG] Hosting starting
+2025-11-17 11:58:08.230 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 11:58:08.237 -05:00 [INF] Hosting environment: Production
+2025-11-17 11:58:08.239 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 11:58:08.239 -05:00 [DBG] Hosting started
+2025-11-17 12:00:18.775 -05:00 [DBG] Hosting starting
+2025-11-17 12:00:19.892 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 12:00:19.897 -05:00 [INF] Hosting environment: Production
+2025-11-17 12:00:19.899 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 12:00:19.899 -05:00 [DBG] Hosting started
+2025-11-17 12:01:07.861 -05:00 [DBG] Hosting starting
+2025-11-17 12:01:08.947 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 12:01:08.953 -05:00 [INF] Hosting environment: Production
+2025-11-17 12:01:08.955 -05:00 [INF] Content root path: C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\bin\Release\net8.0
+2025-11-17 12:01:08.956 -05:00 [DBG] Hosting started
+2025-11-17 15:28:15.700 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000011
+2025-11-17 15:28:15.700 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000010
+2025-11-17 15:28:16.568 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:28:16.633 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:28:19.253 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000012
+2025-11-17 15:28:19.424 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:31:29.197 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000010
+2025-11-17 15:31:29.948 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:31:32.719 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000011
+2025-11-17 15:31:32.895 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000012
+2025-11-17 15:31:32.904 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:31:33.050 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:32:57.326 [INF] detenido por cancelación
+2025-11-17 15:34:08.821 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000011
+2025-11-17 15:34:09.635 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:34:12.381 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000010
+2025-11-17 15:34:12.516 [INF] Validación completa exitosa - DGII: Aceptado
+2025-11-17 15:34:12.545 [INF] Consultando DGII - RNC: 101889063, ENCF: E310000000012
+2025-11-17 15:34:12.683 [INF] Validación completa exitosa - DGII: Aceptado
