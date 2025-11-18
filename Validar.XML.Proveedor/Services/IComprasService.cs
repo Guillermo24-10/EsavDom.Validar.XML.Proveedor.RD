@@ -1,9 +1,10 @@
-﻿using Validar.XML.Proveedor.Models;
+﻿using System.Xml;
+using Validar.XML.Proveedor.Models;
 
 namespace Validar.XML.Proveedor.Services
 {
-    internal interface IComprasService
+    public interface IComprasService
     {
-        Task<bool> GuardarCompraAsync(RPCompras compra);
+        Task<bool> GuardarCompraAsync(XmlDocument xmlDoc);
     }
 }

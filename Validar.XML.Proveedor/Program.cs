@@ -59,7 +59,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IComprasRepository, ComprasRepository>();
 builder.Services.AddScoped<IComprasService, ComprasService>();
-builder.Services.AddSingleton<IValidadorXmlService, ValidadorXmlService>();
+builder.Services.AddScoped<IValidadorXmlService, ValidadorXmlService>();
 builder.Services.AddSingleton<IStorageService, StorageService>();
 builder.Services.AddSingleton<IColaService, ColaService>();
 builder.Services.AddHostedService<ValidadorWorker>();

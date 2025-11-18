@@ -113,13 +113,10 @@ namespace Validar.XML.Proveedor.Workers
             var procesoExitoso = false;
             try
             {
-                ConsolaMensaje($"Procesando mensaje: {mensaje.MessageId}");
-
                 await ProcesarValidacion(mensaje.Datos, stoppingToken);
                 procesoExitoso = true;
 
                 Interlocked.Increment(ref _totalExitosos);
-                ConsolaMensaje($"Validación completada: {mensaje.Datos.IdProceso}");
             }
             catch (Exception ex)
             {
@@ -149,7 +146,6 @@ namespace Validar.XML.Proveedor.Workers
         {
             try
             {
-                ConsolaMensaje($"Actualizando estado a 'Procesando': {datos.IdProceso}");
                 await _storageService.ActualizarEstadoAsync(
                     datos.EmisorId,
                     datos.IdProceso,

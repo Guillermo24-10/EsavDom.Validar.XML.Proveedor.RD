@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\workers\\validadorworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\workers\\validadorworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\services\\repository\\comprasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\services\\repository\\comprasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\services\\comprasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\services\\comprasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\services\\validadorxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\services\\validadorxmlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|c:\\desarrollo_jdm\\facturaciondominicana\\esavdom.validar.xml.proveedor\\validar.xml.proveedor\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A94080-1F7E-4F3A-BFFD-F71BF3079A8E}|Validar.XML.Proveedor\\Validar.XML.Proveedor.csproj|solutionrelative:validar.xml.proveedor\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:471218599:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:938577012:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StorageService.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\StorageService.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Services\\StorageService.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\StorageService.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Services\\StorageService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:06:36.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValidadorWorker.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Workers\\ValidadorWorker.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Workers\\ValidadorWorker.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Workers\\ValidadorWorker.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Workers\\ValidadorWorker.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAUwHYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:15:33.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\appsettings.json",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\appsettings.json",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\appsettings.json",
+              "RelativeToolTip": "Validar.XML.Proveedor\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T15:05:06.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Program.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Program.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Program.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:04:58.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ValidadorXmlService.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\ValidadorXmlService.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Services\\ValidadorXmlService.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\ValidadorXmlService.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Services\\ValidadorXmlService.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAYwGUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T14:14:10.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComprasRepository.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\Repository\\ComprasRepository.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Services\\Repository\\ComprasRepository.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\Repository\\ComprasRepository.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Services\\Repository\\ComprasRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T14:05:55.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComprasService.cs",
+              "DocumentMoniker": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\ComprasService.cs",
+              "RelativeDocumentMoniker": "Validar.XML.Proveedor\\Services\\ComprasService.cs",
+              "ToolTip": "C:\\DESARROLLO_JDM\\FacturacionDominicana\\EsavDom.Validar.XML.Proveedor\\Validar.XML.Proveedor\\Services\\ComprasService.cs",
+              "RelativeToolTip": "Validar.XML.Proveedor\\Services\\ComprasService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:57:09.487Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1040,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

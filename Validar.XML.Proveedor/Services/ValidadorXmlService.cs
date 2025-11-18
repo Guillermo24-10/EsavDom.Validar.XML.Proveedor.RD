@@ -11,13 +11,15 @@ namespace Validar.XML.Proveedor.Services
         private readonly ILogger<ValidadorXmlService> _logger;
         private readonly HttpClient _httpClient;
         private readonly string _ambiente;
+        private readonly IComprasService _comprasService;
 
-        public ValidadorXmlService(ILogger<ValidadorXmlService> logger, HttpClient httpClient, IConfiguration configuration)
+        public ValidadorXmlService(ILogger<ValidadorXmlService> logger, HttpClient httpClient, IConfiguration configuration, IComprasService comprasService)
         {
             _logger = logger;
             _httpClient = httpClient;
             _httpClient.Timeout = TimeSpan.FromSeconds(30);
             _ambiente = configuration.GetValue<string>("Ambiente")!;
+            _comprasService = comprasService;
         }
 
         public async Task<ResultadoValidacion> ValidarXmlAsync(string contenidoXml, string emisorId)
@@ -95,6 +97,12 @@ namespace Validar.XML.Proveedor.Services
                 resultado.Detalles["ValidadoPorDGII"] = "Sí";
                 resultado.Detalles["FechaValidacionDGII"] = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
 
+                // Guardar RPCompras si es que no tuvo rechazos previos
+                var status = await _comprasService.GuardarCompraAsync(xmlDoc); // guarda bd registro de compra
+                if (status)
+                {
+                    _logger.LogInformation("Registro de compra guardado exitosamente en RPCompras.");
+                }
                 //_logger.LogInformation("Validación completa exitosa - DGII: {Estado}", resultadoDGII.Estado);
             }
             catch (Exception ex)
