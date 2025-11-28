@@ -136,7 +136,8 @@
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.7.1",
           "Microsoft.SqlServer.Server": "1.0.0",
           "System.Configuration.ConfigurationManager": "8.0.1",
-          "System.Security.Cryptography.Pkcs": "8.0.1"
+          "System.Security.Cryptography.Pkcs": "8.0.1",
+          "System.Text.Json": "9.0.11"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Data.SqlClient.dll": {
@@ -627,7 +628,8 @@
       },
       "Microsoft.Identity.Client/4.73.1": {
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "7.7.1"
+          "Microsoft.IdentityModel.Abstractions": "7.7.1",
+          "System.Diagnostics.DiagnosticSource": "9.0.11"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Identity.Client.dll": {

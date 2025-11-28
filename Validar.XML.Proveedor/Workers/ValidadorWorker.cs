@@ -87,20 +87,19 @@ namespace Validar.XML.Proveedor.Workers
 
         private async Task<int> ProcesarMensajesCola(CancellationToken stoppingToken)
         {
-            // Recibir múltiples mensajes a la vez
             var mensajes = await _colaService.RecibirMensajesAsync(_maximoMensajesPorCiclo, stoppingToken);
 
             if (mensajes == null || !mensajes.Any())
             {
-                return 0; // No hay mensajes
+                return 0;
             }
+
             ConsolaMensaje($"Iniciando procesamiento de {mensajes.Count} mensajes...");
 
-            // Procesar en paralelo
-            var tareasProcesamiento = mensajes.Select(mensaje =>
-                ProcesarMensajeIndividualAsync(mensaje, stoppingToken));
-
-            await Task.WhenAll(tareasProcesamiento);
+            foreach (var mensaje in mensajes)
+            {
+                await ProcesarMensajeIndividualAsync(mensaje, stoppingToken);
+            }
 
             ConsolaMensaje($"Ciclo completado: {mensajes.Count} mensajes procesados");
             MostrarEstadisticas();

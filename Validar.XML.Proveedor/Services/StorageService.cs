@@ -7,15 +7,13 @@ namespace Validar.XML.Proveedor.Services
 {
     public class StorageService : IStorageService
     {
-        private readonly IConfiguration _configuration;
         private readonly ILogger<StorageService> _logger;
         private readonly string _connectionString;
 
         public StorageService(IConfiguration configuration, ILogger<StorageService> logger)
         {
-            _configuration = configuration;
             _logger = logger;
-            _connectionString = _configuration.GetConnectionString("ConnStorageDom")
+            _connectionString = configuration.GetConnectionString("ConnStorageDom")
                 ?? throw new InvalidOperationException("ConnectionString 'ConnStorageDom' no encontrado");
         }
 

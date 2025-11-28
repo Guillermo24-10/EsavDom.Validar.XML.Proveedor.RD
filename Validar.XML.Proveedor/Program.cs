@@ -57,7 +57,10 @@ builder.Configuration
 // Registrar servicios
 builder.Services.AddHttpClient();
 builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IBancoCajaService, BancoCajaService>();
+builder.Services.AddScoped<IProveedoresService, ProveedoresService>();  
 builder.Services.AddScoped<IComprasRepository, ComprasRepository>();
+builder.Services.AddScoped<IBancoCajaRepository, BancoCajaRepository>();
 builder.Services.AddScoped<IComprasService, ComprasService>();
 builder.Services.AddScoped<IValidadorXmlService, ValidadorXmlService>();
 builder.Services.AddSingleton<IStorageService, StorageService>();

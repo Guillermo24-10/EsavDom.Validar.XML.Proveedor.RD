@@ -1,0 +1,230 @@
+2025-11-28 12:10:31.792 [INF] Registro de compra guardado exitosamente en RPCompras.
+2025-11-28 12:10:32.027 [ERR] Error en transacción INSERT para compra 12
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 65
+ClientConnectionId:5efeab9d-d455-48bd-a145-ddae3cbfcc7e
+Error Number:8115,State:8,Class:16
+2025-11-28 12:10:32.619 [ERR] Error en transacción INSERT para compra 11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 65
+ClientConnectionId:a42fd1a5-cb7e-41c0-9617-b55b54ebb329
+Error Number:8115,State:8,Class:16
+2025-11-28 12:24:07.891 [ERR] Error al descargar blob DO/132035305/validaciones/XML/202511/101889063E310000000011.xml
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 06cf3cde-701e-0076-058b-603d0f000000
+x-ms-client-request-id: 80d27124-ff39-494d-875d-dbff9f909ebe
+x-ms-version: 2025-11-05
+x-ms-error-code: BlobNotFound
+Date: Fri, 28 Nov 2025 17:24:04 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String structuredBodyType, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentInternal(BlobRequestConditions conditions, IProgress`1 progressHandler, HttpRange range, DownloadTransferValidationOptions transferValidationOverride, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(BlobRequestConditions conditions, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(CancellationToken cancellationToken)
+   at Validar.XML.Proveedor.Services.StorageService.DescargarBlobAsync(String containerName, String blobName, CancellationToken cancellationToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\StorageService.cs:line 30
+2025-11-28 12:24:07.988 [ERR] Error al procesar validación: 101889063E310000000011
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 06cf3cde-701e-0076-058b-603d0f000000
+x-ms-client-request-id: 80d27124-ff39-494d-875d-dbff9f909ebe
+x-ms-version: 2025-11-05
+x-ms-error-code: BlobNotFound
+Date: Fri, 28 Nov 2025 17:24:04 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String structuredBodyType, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentInternal(BlobRequestConditions conditions, IProgress`1 progressHandler, HttpRange range, DownloadTransferValidationOptions transferValidationOverride, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(BlobRequestConditions conditions, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(CancellationToken cancellationToken)
+   at Validar.XML.Proveedor.Services.StorageService.DescargarBlobAsync(String containerName, String blobName, CancellationToken cancellationToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\StorageService.cs:line 30
+   at Validar.XML.Proveedor.Workers.ValidadorWorker.ProcesarValidacion(MensajeValidacion datos, CancellationToken stoppingToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Workers\ValidadorWorker.cs:line 154
+2025-11-28 12:24:08.536 [ERR] Error procesando mensaje: 69ea8cdb-6cee-4be0-ad95-b43f4cb5fbba
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:06cf3cde-701e-0076-058b-603d0f000000
+Time:2025-11-28T17:24:05.5111517Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 06cf3cde-701e-0076-058b-603d0f000000
+x-ms-client-request-id: 80d27124-ff39-494d-875d-dbff9f909ebe
+x-ms-version: 2025-11-05
+x-ms-error-code: BlobNotFound
+Date: Fri, 28 Nov 2025 17:24:04 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String structuredBodyType, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentInternal(BlobRequestConditions conditions, IProgress`1 progressHandler, HttpRange range, DownloadTransferValidationOptions transferValidationOverride, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(BlobRequestConditions conditions, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadContentAsync(CancellationToken cancellationToken)
+   at Validar.XML.Proveedor.Services.StorageService.DescargarBlobAsync(String containerName, String blobName, CancellationToken cancellationToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\StorageService.cs:line 30
+   at Validar.XML.Proveedor.Workers.ValidadorWorker.ProcesarValidacion(MensajeValidacion datos, CancellationToken stoppingToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Workers\ValidadorWorker.cs:line 154
+   at Validar.XML.Proveedor.Workers.ValidadorWorker.ProcesarValidacion(MensajeValidacion datos, CancellationToken stoppingToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Workers\ValidadorWorker.cs:line 192
+   at Validar.XML.Proveedor.Workers.ValidadorWorker.ProcesarMensajeIndividualAsync(MensajeCola mensaje, CancellationToken stoppingToken) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Workers\ValidadorWorker.cs:line 115
+2025-11-28 12:36:39.112 [INF] Registro de compra guardado exitosamente en RPCompras.
+2025-11-28 12:39:18.325 [ERR] Error en transacción INSERT para compra 11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 65
+ClientConnectionId:95a165fc-09d3-4459-8460-502269c5e7d6
+Error Number:8115,State:8,Class:16
+2025-11-28 12:43:44.885 [ERR] Error en transacción INSERT para compra 12
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 65
+ClientConnectionId:95a165fc-09d3-4459-8460-502269c5e7d6
+Error Number:8115,State:8,Class:16
+2025-11-28 12:52:59.148 [ERR] Error en transacción INSERT para compra 11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 70
+ClientConnectionId:2a817ee5-4897-476b-a938-d4e73b78a87f
+Error Number:8115,State:8,Class:16
+2025-11-28 12:57:10.298 [ERR] Error en transacción INSERT para compra 11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 70
+ClientConnectionId:9254e7b3-e1eb-446e-8d0a-aa9425fd24dd
+Error Number:8115,State:8,Class:16
+2025-11-28 12:59:41.271 [ERR] Error en transacción INSERT para compra 11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Arithmetic overflow error converting numeric to data type numeric.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at Validar.XML.Proveedor.Services.Repository.ComprasRepository.InsertarAsync(RPCompras compras) in C:\DESARROLLO_JDM\FacturacionDominicana\EsavDom.Validar.XML.Proveedor\Validar.XML.Proveedor\Services\Repository\ComprasRepository.cs:line 70
+ClientConnectionId:be566a4a-4c12-4edf-bc14-aff2bc9d61cc
+Error Number:8115,State:8,Class:16
+2025-11-28 13:16:47.112 [INF] Registro de compra guardado exitosamente en RPCompras.

@@ -1,4 +1,6 @@
-﻿namespace Validar.XML.Proveedor.Services
+﻿using Azure.Data.Tables;
+
+namespace Validar.XML.Proveedor.Services
 {
     public interface IStorageService
     {

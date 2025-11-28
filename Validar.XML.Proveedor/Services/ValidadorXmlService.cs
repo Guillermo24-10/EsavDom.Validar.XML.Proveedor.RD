@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Web;
 using System.Xml;
 using Validar.XML.Proveedor.Models;
+using prov = Validar.XML.Proveedor.Models.Proveedor;
 
 namespace Validar.XML.Proveedor.Services
 {
@@ -12,14 +13,18 @@ namespace Validar.XML.Proveedor.Services
         private readonly HttpClient _httpClient;
         private readonly string _ambiente;
         private readonly IComprasService _comprasService;
+        private readonly IBancoCajaService _bancoCajaService;
+        private readonly IProveedoresService _proveedoresService;
 
-        public ValidadorXmlService(ILogger<ValidadorXmlService> logger, HttpClient httpClient, IConfiguration configuration, IComprasService comprasService)
+        public ValidadorXmlService(ILogger<ValidadorXmlService> logger, HttpClient httpClient, IConfiguration configuration, IComprasService comprasService, IProveedoresService proveedoresService, IBancoCajaService bancoCajaService)
         {
             _logger = logger;
             _httpClient = httpClient;
             _httpClient.Timeout = TimeSpan.FromSeconds(30);
             _ambiente = configuration.GetValue<string>("Ambiente")!;
             _comprasService = comprasService;
+            _proveedoresService = proveedoresService;
+            _bancoCajaService = bancoCajaService;
         }
 
         public async Task<ResultadoValidacion> ValidarXmlAsync(string contenidoXml, string emisorId)
@@ -75,10 +80,6 @@ namespace Validar.XML.Proveedor.Services
                     return resultado;
                 }
 
-                // 4. Consultar en DGII
-                _logger.LogInformation("Consultando DGII - RNC: {RncEmisor}, ENCF: {ENCF}",
-                    datosConsulta.RncEmisor, datosConsulta.ENCF);
-
                 var resultadoDGII = await ConsultarTimbreDGII(datosConsulta);
 
                 if (!resultadoDGII.Exitoso)
@@ -101,6 +102,29 @@ namespace Validar.XML.Proveedor.Services
                 var status = await _comprasService.GuardarCompraAsync(xmlDoc); // guarda bd registro de compra
                 if (status)
                 {
+                    var rncComprador = xmlDoc.SelectSingleNode("//RNCComprador")?.InnerText ??
+                                  xmlDoc.SelectSingleNode("//Receptor/RNC")?.InnerText ??
+                                  xmlDoc.SelectSingleNode("//Comprador/RNC")?.InnerText ?? string.Empty;
+                    var razonSocialEmisor = xmlDoc.SelectSingleNode("//RazonSocialEmisor")?.InnerText ?? string.Empty;
+                    var rncEmisor = xmlDoc.SelectSingleNode("//RNCEmisor")?.InnerText ??
+                               xmlDoc.SelectSingleNode("//Emisor/RNC")?.InnerText ?? string.Empty;
+
+                    //obtener cuenta bancaria principal del proveedor
+                    var cuenta = await _bancoCajaService.ListarBancoCaja(rncEmisor);
+                    //guardar proveedor si no existe    
+                    await _proveedoresService.GuardarProveedores(new List<prov>()
+                    {
+                        new prov()
+                        {
+                            RncComprador = rncComprador,
+                            RazonSocialProveedor = razonSocialEmisor,
+                            RncProveedor = rncEmisor,
+                            CorreoPrincial = string.Empty,
+                            Telefono =string.Empty,
+                            Cuenta = cuenta.Where(x => x.Banc_EsCuentaPrincipal == true)?.Select(x => x.Banc_Id).FirstOrDefault() ?? "",
+                            TipoDocProveedor = "2"
+                        }
+                    }, 1);
                     _logger.LogInformation("Registro de compra guardado exitosamente en RPCompras.");
                 }
                 //_logger.LogInformation("Validación completa exitosa - DGII: {Estado}", resultadoDGII.Estado);
@@ -178,7 +202,6 @@ namespace Validar.XML.Proveedor.Services
         {
             try
             {
-                // Construir URL con parámetros
                 var baseUrl = $"https://ecf.dgii.gov.do/{_ambiente}/ConsultaTimbre";
 
                 var queryParams = HttpUtility.ParseQueryString(string.Empty);
@@ -192,17 +215,14 @@ namespace Validar.XML.Proveedor.Services
 
                 var url = $"{baseUrl}?{queryParams}";
 
-                //Console.WriteLine($"Consultando DGII en: {url}");
 
-                // Realizar consulta HTTP
+                // consulta HTTP
                 var response = await _httpClient.GetAsync(url);
                 var contenido = await response.Content.ReadAsStringAsync();
 
-                //Console.WriteLine($"Respuesta DGII Status: {response.StatusCode}");
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // Parsear respuesta - ajustar según formato real de DGII
                     return ParsearRespuestaDGII(contenido, response.StatusCode);
                 }
                 else

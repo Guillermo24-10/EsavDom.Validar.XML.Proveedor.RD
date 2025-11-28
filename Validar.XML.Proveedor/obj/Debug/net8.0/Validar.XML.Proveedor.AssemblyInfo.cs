@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Validar.XML.Proveedor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+504a0697ff1079cf7ce2f01f80bdf0bdcb7e869d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86ee4052c004797c211f6fabde1c908d47652827")]
 [assembly: System.Reflection.AssemblyProductAttribute("Validar.XML.Proveedor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Validar.XML.Proveedor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
